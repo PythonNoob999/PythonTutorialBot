@@ -44,3 +44,4 @@ class DB:
     def update_settings(self, group_id, status):
         self.c.execute("UPDATE settings SET private_send = (?) WHERE group_id = (?)", [status, str(group_id)])
         self.con.commit()
+        
