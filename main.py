@@ -71,7 +71,7 @@ async def group_handler(bot, m):
             btns.pop(-1)
             await bot.send_message(chat_id, msg["start-ar"], reply_markup=Markup(btns))
             
-    elif command.startswith("set_lang"):
+    elif command.startswith("set_lang_"):
         language = command.split("_")[2]
         if language in ["ar", "en"]:
             if await is_admin(bot, chat_id, m.from_user.username):
@@ -81,6 +81,24 @@ async def group_handler(bot, m):
                 await m.reply_text("Chat Admin Required!")
         else:
             await m.reply_text("Unkown Language!")
+   
+    elif command.startswith("send_private_"):
+         status = command.split("_")[2]
+         if status.lower() == "on":
+             if await is_admin(bot, chat_id, m.from_user.username):
+                 db.update_settings(str(m.chat.id), "on")
+                 await m.reply_text("✅")
+             else:
+                 await m.reply_text("Chat Admin Required!")
+         elif status.lower() == "off":
+             if await is_admin(bot, chat_id, m.from_user.username):
+                 db.update_settings(str(m.chat.id), "off")
+                 await m.reply_text("✅")
+             else:
+                 await m.reply_text("Chat Admin Required!")             
+         else:
+             await m.reply_text("Unkown option!")
+         
 
         
 
@@ -118,19 +136,42 @@ async def handy(bot, CallBack):
     #*/ User Panel */#
     elif data.startswith("info"):
         lang = db.get_lang(str(chat))
+        stat = db.get_type(str(chat))
         material = data.split("-")[1]
         if lang == "EN":
-            await CallBack.edit_message_text(text=msg[f"{material}-en"], reply_markup=keyboards[material])
+            if stat == "GROUP":
+                sending = db.get_settings(str(chat))
+                if sending.lower() == "off":
+                    await CallBack.edit_message_text(text=msg[f"{material}-en"], reply_markup=keyboards[material])
+                elif sending.lower() == "on":
+                    try:
+                        await bot.send_message(CallBack.from_user.id, msg[f"{material}-en"], reply_markup=keyboards[material])
+                        #await bot.send_message(chat, f"sent info to user [{CallBack.from_user.first_name}](tg://user?id={CallBack.from_user.id})")
+                    except:
+                        pass
+                        #await bot.send_message(chat, f"Failed to send info in [{CallBack.from_user.first_name}](tg://user?id={CallBack.from_user.id}) pm")
+            elif stat == "USER":
+                await CallBack.edit_message_text(text=msg[f"{material}-en"], reply_markup=keyboards[material])
         elif lang == 'AR':
-            await CallBack.edit_message_text(text=msg[f"{material}-ar"], reply_markup=keyboards[material])
-            
-    elif data == "data_types-ar" or data == "data_types-en":
+            if stat == "GROUP":
+                sending = db.get_settings(str(chat))
+                if sending.lower() == "off":
+                    await CallBack.edit_message_text(text=msg[f"{material}-en"], reply_markup=keyboards[material])
+                elif sending.lower() == "on":
+                    try:
+                        await bot.send_message(CallBack.from_user.id, msg[f"{material}-en"], reply_markup=keyboards[material])
+                        await bot.send_message(chat, f"sent info to user [{CallBack.from_user.first_name}](tg://user?id={CallBack.from_user.id})")
+                    except:
+                        await bot.send_message(chat, f"Failed to send info in [{CallBack.from_user.first_name}](tg://user?id={CallBack.from_user.id}) pm")                
+            elif stat == "USER":
+                await CallBack.edit_message_text(text=msg[f"{material}-ar"], reply_markup=keyboards[material])
+
+    elif data in ["data_types-ar", "data_types-en", "loops-ar", "loops-en", "basic_funcs-en", "basic_funcs-ar"]:
         await CallBack.edit_message_text(text=msg[data], reply_markup=keyboards[data])
         
-    elif data.startswith('data_types'):
+    elif data.startswith('data_types') or data.startswith("loops") or data.startswith("basic_funcs"):
         await CallBack.edit_message_text(text=msg[data], reply_markup=Markup([[Button("↩️", callback_data=f"{data.split('-')[0]}-{data.split('-')[-1]}")]]))
-        
-            
+                    
     elif data == "set_lang":
         lang = await get_reply(message, "Please Choose a Language! | من فضلك قم بإختيار لغة", reply_markup=keyboards["lang"], return_raw=True)
         if lang != False:
@@ -157,17 +198,37 @@ async def handy(bot, CallBack):
         lang = db.get_lang(str(chat))
         stat = db.get_type(str(chat))
         if lang == "EN":
+            # we pop the last button on the standard keyboard, to prevent any member to change group language
             if stat == "GROUP":
+                sending = db.get_settings(str(chat))
                 btns = keyboards["start-en"][:]
                 btns.pop(-1)
-                await CallBack.edit_message_text(text=msg["start-en"], reply_markup=Markup(btns))
+                if sending.lower() == "off":
+                    await CallBack.edit_message_text(text=msg["start-en"], reply_markup=Markup(btns))
+                elif sending.lower() == "on":
+                    try:
+                        await bot.send_message(CallBack.from_user.id, msg["start-en"], reply_markup=Markup(keyboards["start-en"]))
+                        #await bot.send_message(chat, f"sent info to user [{CallBack.from_user.first_name}](tg://user?id={CallBack.from_user.id})")
+                    except:
+                        pass
+                        #await bot.send_message(chat, f"Failed to send info in [{CallBack.from_user.first_name}](tg://user?id={CallBack.from_user.id}) pm")
             elif stat == "USER":
                 await CallBack.edit_message_text(text=msg["start-en"], reply_markup=Markup(keyboards["start-en"]))
         elif lang == "AR":
             if stat == "GROUP":
+                sending = db.get_settings(str(chat))
                 btns = keyboards["start-ar"][:]     
                 btns.pop(-1)         
-                await CallBack.edit_message_text(text=msg["start-ar"], reply_markup=Markup(btns))
+                if sending.lower() == "off":
+                    await CallBack.edit_message_text(text=msg["start-ar"], reply_markup=Markup(btns))
+                elif sending.lower() == "on":
+                    try:
+                        await bot.send_message(CallBack.from_user.id, msg["start-ar"], reply_markup=Markup(keyboards["start-ar"]))
+                        #await bot.send_message(chat, f"تم ارسال المعلومات عند  [{CallBack.from_user.first_name}](tg://user?id={CallBack.from_user.id})")
+                    except:
+                        pass
+                        #await bot.send_message(chat, f"فشل ارسال المعلومات الي  [{CallBack.from_user.first_name}](tg://user?id={CallBack.from_user.id}) pm")
+                                        
             elif stat == "USER":
                 await CallBack.edit_message_text(text=msg["start-ar"], reply_markup=Markup(keyboards["start-ar"]))          
 
