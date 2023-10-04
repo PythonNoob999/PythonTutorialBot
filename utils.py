@@ -21,6 +21,7 @@ msg = {
 
 **مثال📟:**
 `{}`
+[GitHub](https://github.com/PythonNoob999/PythonTutorialBot/blob/master/examples/{})📒
 ''',
 "template-en": '''
 **••{}••**
@@ -36,6 +37,7 @@ msg = {
 
 **Example📟:**
 `{}`
+[GitHub](https://github.com/PythonNoob999/PythonTutorialBot/blob/master/examples/{})📒
 ''',
 "start-en": """
 Welcome in your **Journey Helper** for learning python🗂

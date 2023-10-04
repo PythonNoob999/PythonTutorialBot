@@ -124,14 +124,21 @@ async def handy(bot, CallBack):
                     if syntax:
                         usage_example = await get_reply(message, "Send Usage Example❓")
                         if usage_example:
-                            example = await get_reply(message, "Send Example📟:", return_raw=True)
-                            if example != False:
-                                sid = example.id
-                                example = example.text
-                                do_it = True
+                            example = await get_reply(message, "Send Example📟:")
+                            if example:
+                                github_example = await get_reply(message, "Send GitHub Example")
+                                if github_example:
+                                    file_path = await get_reply(message, "Send file_name", return_raw=True)
+                                    if file_path != False:
+                                        sid = file_path.id
+                                        file_path = file_path.text
+                                        do_it = True
+                                        with open(f"examples/{file_path}", "w") as file:
+                                            file.write(github_example)
+                                            file.close()
         if do_it:
             await clean(bot, chat, sid)
-            await bot.send_message(chat, template.format(main_title, desc, syntax, usage_example, example), parse_mode=enums.ParseMode.DISABLED)
+            await bot.send_message(chat, template.format(main_title, desc, syntax, usage_example, example, file_path), parse_mode=enums.ParseMode.DISABLED)
 
     #*/ User Panel */#
     elif data.startswith("info"):
