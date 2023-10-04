@@ -63,6 +63,7 @@ you can start exploring by pressing one of those **Buttons** under the message
 `number = 5
 print(number*2)
 >> 10`
+[GitHub](https://github.com/PythonNoob999/PythonTutorialBot/blob/master/examples/variables_en.py)📒
 ''',
 "variables-ar": '''
 **••المتغيرات📒••**
@@ -82,7 +83,7 @@ variable_name = DataType`
 number = 5
 print(number*2)
 >> 10`
-''',
+[GitHub](https://github.com/PythonNoob999/PythonTutorialBot/blob/master/examples/variables_ar.py)📒''',
 "data_types-ar": "قم بأختيار نوع البيانات",
 "data_types-en": "Choose DataType",
 "data_types-str-ar": '''
@@ -105,6 +106,7 @@ print("Hello World!")
 user_name = "Ahmed"
 password = "12345abc"
 `
+[GitHub](https://github.com/PythonNoob999/PythonTutorialBot/blob/master/examples/data_types_str_all.py)📒
 ''',
 "data_types-str-en": '''
 **••String data type••**
@@ -123,6 +125,7 @@ password = "12345abc"
 user_name = "Jack"
 password = "12345abc"
 `
+[GitHub](https://github.com/PythonNoob999/PythonTutorialBot/blob/master/examples/data_types_str_all.py)📒
 ''',
 "data_types-int-ar": '''
 **••البيانات الرقمية Int••**
@@ -141,8 +144,9 @@ password = "12345abc"
 Angle1 = 70
 Angle2 = 80
 # نقوم بجمع المتغيرين و نطرحهم من 180
-print("Third angle is ", (Angle1+Angle2)-180, " Degrees°")`
->> Third angle is 30 Degrees°
+print("Third angle is ", (Angle1+Angle2)-180, " Degrees°")
+>> Third angle is 30 Degrees°`
+[GitHub](https://github.com/PythonNoob999/PythonTutorialBot/blob/master/examples/data_types_int_ar.py)📒
 ''',
 "data_types-int-en": '''
 **••Int Data Type••**
@@ -160,8 +164,9 @@ print("Third angle is ", (Angle1+Angle2)-180, " Degrees°")`
 **Example📟:**
 `Angle1 = 80
 Angle2 = 70
-print("Third angle is ", (Angle1+Angle2)-180, " Degrees°")`
->> Third angle is 30 Degrees°
+print("Third angle is ", (Angle1+Angle2)-180, " Degrees°")
+>> Third angle is 30 Degrees°`
+[GitHub](https://github.com/PythonNoob999/PythonTutorialBot/blob/master/examples/data_types_int_en.py)📒
 ''',
 "data_types-float-ar": '''
 **••البيانات العشرية Float••**
@@ -187,6 +192,7 @@ bmi = weight / (height**2)
 # نقوم بطباعة مؤشر كتلة الجسم (BMI)
 print("Your bmi is ", bmi)
 >> Your bmi is 4.61763861`
+[GitHub](https://github.com/PythonNoob999/PythonTutorialBot/blob/master/examples/data_types_float_ar.py)📒
 ''',
 "data_types-float-en": '''
 **••Float Data Type••**
@@ -212,6 +218,7 @@ bmi = weight / (height**2)
 # now we print the bmi
 print("Your bmi is ", bmi)
 >> Your bmi is 4.61763861`
+[GitHub](https://github.com/PythonNoob999/PythonTutorialBot/blob/master/examples/data_types_float_en.py)📒
 ''',
 "data_types-bool-ar": '''
 **••المنطقية Boolean••**
@@ -249,6 +256,7 @@ if password2 == password:
 
 print(access)
 >> False`
+[GitHub](https://github.com/PythonNoob999/PythonTutorialBot/blob/master/examples/data_types_bool_ar.py)📒
 ''',
 "data_types-bool-en": '''
 **••Boolean Data Type••**
@@ -288,6 +296,7 @@ if password2 == password:
 
 print(access)
 >> False`
+[GitHub](https://github.com/PythonNoob999/PythonTutorialBot/blob/master/examples/data_types_bool_en.py)📒
 ''',
 "data_types-list-en": '''
 **••Array/List []••**
@@ -319,6 +328,7 @@ print(fruits[-2]) # the item before the last one
 fruits[0] = "Orange" # we can even change it's values
 print(fruits)
 >> ["Orange", "Kiwi", "Banana"]`
+[GitHub](https://github.com/PythonNoob999/PythonTutorialBot/blob/master/examples/data_types_list_en.py)📒
 ''',
 "data_types-list-ar": '''
 **••القوائم []••**
@@ -350,6 +360,7 @@ print(fruits[-2]) # المكان ما قبل الاخير
 fruits[0] = "Orange" # نستطيع ايضا تغير قيمة معينة في القائمة
 print(fruits)
 >> ["Orange", "Kiwi", "Banana"]`
+[GitHub](https://github.com/PythonNoob999/PythonTutorialBot/blob/master/examples/data_types_list_ar.py)📒
 ''',
 "data_types-tuple-en": '''
 **••Tuples ()••**
@@ -380,6 +391,7 @@ print(fruits[-1])
 
 fruits[0] = "Orange"
 >> TypeError: "str" object does not support item assignment❗️`
+[GitHub](https://github.com/PythonNoob999/PythonTutorialBot/blob/master/examples/data_types_tuple_en.py)📒
 ''',
 "data_types-tuple-ar": '''
 **••المترابطة ()••**
@@ -412,6 +424,7 @@ fruits[0] = "Orange"
 # خطأ، نوع البيانات النصية لايدعم تبادل القيم
 
 >> TypeError: "str" object does not support item assignment❗️`
+[GitHub](https://github.com/PythonNoob999/PythonTutorialBot/blob/master/examples/data_types_tuple_ar.py)📒
 ''',
 "data_types-dict-en": '''
 **••Dictionary {}••**
@@ -457,6 +470,7 @@ print(fruits)
 "Kiwi": 9,
 "Banana": 2
 }`
+[GitHub](https://github.com/PythonNoob999/PythonTutorialBot/blob/master/examples/data_types_dict_en.py)📒
 ''',
 "data_types-dict-ar": '''
 **••Dictionary {}••**
@@ -508,6 +522,7 @@ print(fruits)
 "كيوي": 9,
 "موز": 2
 }`
+[GitHub](https://github.com/PythonNoob999/PythonTutorialBot/blob/master/examples/data_types_dict_ar.py)📒
 ''',
 "functions-ar": '''
 **••الدوال••**
@@ -545,6 +560,7 @@ c = third_angel(a, b)
 
 print(c, " درجة")
 >> 50 درجة`
+[GitHub](https://github.com/PythonNoob999/PythonTutorialBot/blob/master/examples/functions_ar.py)📒
 ''',
 "functions-en": '''
 **••Functions••**
@@ -584,6 +600,7 @@ c = third_angle(a, b)
 # we print the third angle
 print(c, " Degrees")
 >> 50 Degrees`
+[GitHub](https://github.com/PythonNoob999/PythonTutorialBot/blob/master/examples/functions_en.py)📒
 ''',
 "loops-ar": "اختر نوع الحلقة",
 "loops-en": "Choose loop",
@@ -628,6 +645,7 @@ print("تم الانتهاء")
 >> اسمك هو احمد
 >> اسمك هو احمد
 >> تم الانتهاء`
+[GitHub](https://github.com/PythonNoob999/PythonTutorialBot/blob/master/examples/loops_while_ar.py)📒
 ''',
 "loops-while-en": '''
 **••While loop ➿••**
@@ -673,6 +691,7 @@ print("Done")
 >> Your name is Jack
 >> Your name is Jack
 >> Done`
+[GitHub](https://github.com/PythonNoob999/PythonTutorialBot/blob/master/examples/loops_while_en.py)📒
 ''',
 "loops-for-ar": '''
 **••حلقة for ➿••**
@@ -715,6 +734,7 @@ print("انتهي البرنامج")
 >> 81
 >> 144
 >> انتهي البرنامج`
+[GitHub](https://github.com/PythonNoob999/PythonTutorialBot/blob/master/examples/loops_for_ar.py)📒
 ''',
 "loops-for-en": '''
 **••for loop➿••**
@@ -759,6 +779,7 @@ print("Finished")
 >> 81
 >> 144
 >> Finished`
+[GitHub](https://github.com/PythonNoob999/PythonTutorialBot/blob/master/examples/loops_for_en.py)📒
 ''',
 "if_else-ar": '''
 **••if-elif-else الشرطية••**
@@ -846,6 +867,7 @@ else:
 
 # اخيرا سوف نجرب كتابة 18
 >> يجب ان تكون اكبر من 18 سنة!، حاول السنة القادمة`
+[GitHub](https://github.com/PythonNoob999/PythonTutorialBot/blob/master/examples/if_else_ar.py)📒
 ''',
 "if_else-en": '''
 **••If-elif-else statements••**
@@ -943,6 +965,7 @@ else:
 
 # the last time we will write 17
 >> You cant use our service!`
+[GitHub](https://github.com/PythonNoob999/PythonTutorialBot/blob/master/examples/if_else_en.py)📒
 ''',
 "lambda-ar": '''
 **••lambda الدالة المجهولة••**
@@ -982,6 +1005,7 @@ print("عمرك بعد 5 سنين هو ", func(age))
 >> قم بإدخال عمرك: 
 # سنقوم بادخال 18 للتجربة
 >> عمرك بعد 5 سنين هو 23`
+[GitHub](https://github.com/PythonNoob999/PythonTutorialBot/blob/master/examples/lambda_ar.py)📒
 ''',
 "lambda-en": '''
 **••lambda, anonymous functions••**
@@ -1020,6 +1044,7 @@ print("You will be ", myfunc(age), " Years old in 5 years")
 >> Type your age: 
 # we will type 16 as our age
 >> You will be 21 Years old in 5 years`
+[GitHub](https://github.com/PythonNoob999/PythonTutorialBot/blob/master/examples/lambda_en.py)📒
 ''',
 "basic_funcs-ar": "قم بإختيار الدالة اللتي تريد تعلمها!",
 "basic_funcs-en": "Choose a function to learn!",
@@ -1062,6 +1087,7 @@ print("طول النص هو ", len(string), " عنصر")
 >> طول المترابطة هو 5 عناصر
 >> طول النص هو 12 عنصر
 # سنلاحظ ان الدالة قامت بحسابة طول النص ك 12 عنصر بدلا من 11 لان عدد حروف الجملة هو 11، لكن الدالة تقوم بحسابة المسافات ايضا`
+[GitHub](https://github.com/PythonNoob999/PythonTutorialBot/blob/master/examples/basic_funcs_len_ar.py)📒
 ''',
 "basic_funcs-len()-en": '''
 **••len() function••**
@@ -1097,6 +1123,7 @@ print("the string has ", len(string), " letters")
 # in the string case the len() function calculate the string, letter by letter
 >> the string has 12 letters
 # now you might think why the string has 12 "letter", when it contains only of 11 letters. well, the len() function also count empty spaces in a string`
+[GitHub](https://github.com/PythonNoob999/PythonTutorialBot/blob/master/examples/basic_funcs_len_en.py)📒
 ''',
 "basic_funcs-min()-ar": '''
 **••min() الدالة••**
@@ -1138,6 +1165,7 @@ else:
 >> رقمك ليس الاصغر في القائمة
 # الان سوف نجرب بكتابة 5 في تاني مرة
 >> لقد قمت ب اختيار اصغر رقم في القائمة`
+[GitHub](https://github.com/PythonNoob999/PythonTutorialBot/blob/master/examples/basic_funcs_min_ar.py)📒
 ''',
 "basic_funcs-min()-en": '''
 **••min() function••**
@@ -1173,6 +1201,7 @@ if min(numbers) == number:
 # other wise we will print that he lost
 else:
     print("You lost! ")`
+[GitHub](https://github.com/PythonNoob999/PythonTutorialBot/blob/master/examples/basic_funcs_min_en.py)📒
 ''',
 "basic_funcs-max()-ar": '''
 **••max() الدالة••**
@@ -1214,6 +1243,7 @@ else:
 >> رقمك ليس الاكبر في القائمة
 # الان سوف نجرب بكتابة 105 في تاني مرة
 >> لقد قمت ب اختيار اكبر رقم في القائمة`
+[GitHub](https://github.com/PythonNoob999/PythonTutorialBot/blob/master/examples/basic_funcs_max_ar.py)📒
 ''',
 "basic_funcs-max()-en": '''
 **••max() function••**
@@ -1249,6 +1279,7 @@ if max(numbers) == number:
 # other wise we will print that he lost
 else:
     print("You lost! ")`
+[GitHub](https://github.com/PythonNoob999/PythonTutorialBot/blob/master/examples/basic_funcs_max_en.py)📒
 ''',
 "basic_funcs-sum()-ar": '''
 **••sum() الدالة••**
@@ -1293,6 +1324,7 @@ print(sum(numbers))
 # بعدها سنقوم بكتابة كلمة exit
 >> [5, 8, 10, 12]
 >> 35`
+[GitHub](https://github.com/PythonNoob999/PythonTutorialBot/blob/master/examples/basic_funcs_sum_ar.py)📒
 ''',
 "basic_funcs-sum()-en": '''
 **••sum() function••**
@@ -1345,6 +1377,7 @@ print(sum(numbers))
 # now it will print the list of numbers and sum
 >> [5, 8, 12]
 >> 25`
+[GitHub](https://github.com/PythonNoob999/PythonTutorialBot/blob/master/examples/basic_funcs_sum_en.py)📒
 ''',
 "basic_funcs-enumerate()-ar": '''
 ''',
