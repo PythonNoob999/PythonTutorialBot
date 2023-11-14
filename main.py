@@ -22,7 +22,7 @@ import asyncio
 bot = Client("PythonTutorialBot", 25299107,"786fa70a24da230b78b3df1fc16a9772", bot_token="6324540456:AAHvmPJD1QZi6DmbZUHYeEw5gUQb62_eo5o")
 db = DB()
 db.c.execute("SELECT * FROM users")
-print(db.c.fetchall())
+#print(db.c.fetchall())
 @bot.on_message(filters.text & filters.private)
 async def main_handler(bot, m):
     chat_id = m.chat.id
@@ -38,8 +38,11 @@ async def main_handler(bot, m):
                 db.add_user(str(m.chat.id), m.chat.username, "GROUP", choice)
             elif m.chat.type == enums.ChatType.PRIVATE:
                 db.add_user(str(m.from_user.id), m.from_user.username, "USER", choice)
-                
-                
+                if  choice == "EN":
+                    await bot.send_message(chat_id, msg["start-en"], reply_markup=Markup(keyboards["start-en"]))
+                elif choice == "AR":
+                    await bot.send_message(chat_id, msg["start-ar"], reply_markup=Markup(keyboards["start-ar"]))
+
     elif command == "start":
         if m.from_user.username == "kerolis55463":
             await bot.send_message(chat_id, "Choose option👇", reply_markup=keyboards["admin"])
@@ -124,21 +127,14 @@ async def handy(bot, CallBack):
                     if syntax:
                         usage_example = await get_reply(message, "Send Usage Example❓")
                         if usage_example:
-                            example = await get_reply(message, "Send Example📟:")
-                            if example:
-                                github_example = await get_reply(message, "Send GitHub Example")
-                                if github_example:
-                                    file_path = await get_reply(message, "Send file_name", return_raw=True)
-                                    if file_path != False:
-                                        sid = file_path.id
-                                        file_path = file_path.text
-                                        do_it = True
-                                        with open(f"examples/{file_path}", "w") as file:
-                                            file.write(github_example)
-                                            file.close()
+                            example = await get_reply(message, "Send Example📟:", return_raw=True)
+                            if example != False:
+                                sid = example.id
+                                example = example.text
+                                do_it = True
         if do_it:
             await clean(bot, chat, sid)
-            await bot.send_message(chat, template.format(main_title, desc, syntax, usage_example, example, file_path), parse_mode=enums.ParseMode.DISABLED)
+            await bot.send_message(chat, template.format(main_title, desc, syntax, usage_example, example), parse_mode=enums.ParseMode.DISABLED)
 
     #*/ User Panel */#
     elif data.startswith("info"):
@@ -174,10 +170,16 @@ async def handy(bot, CallBack):
                 await CallBack.edit_message_text(text=msg[f"{material}-ar"], reply_markup=keyboards[material])
 
     elif data in ["data_types-ar", "data_types-en", "loops-ar", "loops-en", "basic_funcs-en", "basic_funcs-ar"]:
-        await CallBack.edit_message_text(text=msg[data], reply_markup=keyboards[data])
+        return await CallBack.edit_message_text(text=msg[data], reply_markup=keyboards[data])
         
     elif data.startswith('data_types') or data.startswith("loops") or data.startswith("basic_funcs"):
-        await CallBack.edit_message_text(text=msg[data], reply_markup=Markup([[Button("↩️", callback_data=f"{data.split('-')[0]}-{data.split('-')[-1]}")]]))
+        try:
+            return await CallBack.edit_message_text(text=msg[data], reply_markup=Markup([[Button("↩️", callback_data=f"{data.split('-')[0]}-{data.split('-')[-1]}")]]))
+        except:
+            if db.get_lang(str(chat)) == "AR":
+                return await CallBack.answer("عذرآ، لم نقوم بشرح هذا الجزء حتي الان",show_alert=True)
+            else:
+                return await CallBack.answer("Sorry, we didn't add this part yet...",show_alert=True)
                     
     elif data == "set_lang":
         lang = await get_reply(message, "Please Choose a Language! | من فضلك قم بإختيار لغة", reply_markup=keyboards["lang"], return_raw=True)

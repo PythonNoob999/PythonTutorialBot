@@ -23,7 +23,7 @@ class DB:
         self.con.commit()
         
     def get_lang(self, user_id):
-        self.c.execute('SELECT lang FROM users WHERE user_id = (?)', [str(user_id)])
+        self.c.execute('SELECT language FROM users WHERE user_id = (?)', [str(user_id)])
         return self.c.fetchall()[0][0]
         
     def get_type(self, user_id):
@@ -31,7 +31,7 @@ class DB:
         return self.c.fetchall()[0][0]        
         
     def update_lang(self, user_id, new_lang):
-        self.c.execute("UPDATE users SET lang = (?) WHERE user_id = (?)", [new_lang, str(user_id)])
+        self.c.execute("UPDATE users SET language = (?) WHERE user_id = (?)", [new_lang, str(user_id)])
         self.con.commit()
         
     #*/ Group Settings DB */#

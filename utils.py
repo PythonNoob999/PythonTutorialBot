@@ -20,7 +20,9 @@ msg = {
 **{}**
 
 **مثال📟:**
-`{}`
+```python
+{}
+```
 [GitHub](https://github.com/PythonNoob999/PythonTutorialBot/blob/master/examples/{})📒
 ''',
 "template-en": '''
@@ -36,7 +38,9 @@ msg = {
 **{}**
 
 **Example📟:**
-`{}`
+```python
+{}
+```
 [GitHub](https://github.com/PythonNoob999/PythonTutorialBot/blob/master/examples/{})📒
 ''',
 "start-en": """
@@ -62,9 +66,11 @@ you can start exploring by pressing one of those **Buttons** under the message
 **We can use variables to store values inside of them to use it later on**
 
 **Example📟:**
-`number = 5
+```python
+number = 5
 print(number*2)
->> 10`
+>> 10
+```
 [GitHub](https://github.com/PythonNoob999/PythonTutorialBot/blob/master/examples/variables_en.py)📒
 ''',
 "variables-ar": '''
@@ -81,10 +87,12 @@ variable_name = DataType`
 **نستطيع استخدام المتغيرات لتخزيين قيم بداخلها لاستخدامها في وقتآ لاحق**
 
 **مثال📟:**
-`# هنا نقوم بعمل متغير ب قيمة 5 و طباعته x 2
+```python
+# هنا نقوم بعمل متغير ب قيمة 5 و طباعته x 2
 number = 5
 print(number*2)
->> 10`
+>> 10
+```
 [GitHub](https://github.com/PythonNoob999/PythonTutorialBot/blob/master/examples/variables_ar.py)📒''',
 "data_types-ar": "قم بأختيار نوع البيانات",
 "data_types-en": "Choose DataType",
@@ -104,10 +112,10 @@ print("Hello World!")
 **البيانات النصية تدخل في كثير من الاستخدامات، مثل طباعة كلمات في الشاشة، تخزين معلومات مستخدم ك الاسم و الباسورد**
 
 **مثال📟:**
-`
+```python
 user_name = "Ahmed"
 password = "12345abc"
-`
+```
 [GitHub](https://github.com/PythonNoob999/PythonTutorialBot/blob/master/examples/data_types_str_all.py)📒
 ''',
 "data_types-str-en": '''
@@ -123,10 +131,10 @@ password = "12345abc"
 **We can use strings to store a user name and password**
 
 **Example📟:**
-`
+```python
 user_name = "Jack"
 password = "12345abc"
-`
+```
 [GitHub](https://github.com/PythonNoob999/PythonTutorialBot/blob/master/examples/data_types_str_all.py)📒
 ''',
 "data_types-int-ar": '''
@@ -142,12 +150,14 @@ password = "12345abc"
 **يمكن استخدام البيانات الرقمية لمعرفة زاوية ناقصة في مثلث**
 
 **مثال📟:**
-`# نقوم بعمل متغيرين فيهم اول زاويتين
+```python
+# نقوم بعمل متغيرين فيهم اول زاويتين
 Angle1 = 70
 Angle2 = 80
 # نقوم بجمع المتغيرين و نطرحهم من 180
 print("Third angle is ", (Angle1+Angle2)-180, " Degrees°")
->> Third angle is 30 Degrees°`
+>> Third angle is 30 Degrees°
+```
 [GitHub](https://github.com/PythonNoob999/PythonTutorialBot/blob/master/examples/data_types_int_ar.py)📒
 ''',
 "data_types-int-en": '''
@@ -164,10 +174,12 @@ print("Third angle is ", (Angle1+Angle2)-180, " Degrees°")
 
 
 **Example📟:**
-`Angle1 = 80
+```python
+Angle1 = 80
 Angle2 = 70
 print("Third angle is ", (Angle1+Angle2)-180, " Degrees°")
->> Third angle is 30 Degrees°`
+>> Third angle is 30 Degrees°
+```
 [GitHub](https://github.com/PythonNoob999/PythonTutorialBot/blob/master/examples/data_types_int_en.py)📒
 ''',
 "data_types-float-ar": '''
@@ -183,7 +195,8 @@ print("Third angle is ", (Angle1+Angle2)-180, " Degrees°")
 **يمكننا حسابة مؤشر كتلة الجسم (BMI) بدقة كبيرة**
 
 **مثال📟:**
-`# نقوم بتعريف متغيرين فيهم الوزن و الطول
+```python
+# نقوم بتعريف متغيرين فيهم الوزن و الطول
 
 height = 5.9
 weight = 160.74
@@ -193,7 +206,8 @@ bmi = weight / (height**2)
  
 # نقوم بطباعة مؤشر كتلة الجسم (BMI)
 print("Your bmi is ", bmi)
->> Your bmi is 4.61763861`
+>> Your bmi is 4.61763861
+```
 [GitHub](https://github.com/PythonNoob999/PythonTutorialBot/blob/master/examples/data_types_float_ar.py)📒
 ''',
 "data_types-float-en": '''
@@ -209,7 +223,8 @@ print("Your bmi is ", bmi)
 **It can be used to calculate the body BMI accurately**
 
 **Example📟:**
-`# We declare height & weight in float variables
+```python
+# We declare height & weight in float variables
 
 height = 5.9
 weight = 160.74
@@ -219,7 +234,8 @@ bmi = weight / (height**2)
  
 # now we print the bmi
 print("Your bmi is ", bmi)
->> Your bmi is 4.61763861`
+>> Your bmi is 4.61763861
+```
 [GitHub](https://github.com/PythonNoob999/PythonTutorialBot/blob/master/examples/data_types_float_en.py)📒
 ''',
 "data_types-bool-ar": '''
@@ -235,7 +251,8 @@ print("Your bmi is ", bmi)
 **سنقوم بعمل متغيرين رقميين، و سنتأكد ان الرقمين مطابقين لباسورد معين، و ان كانو متطابقين، سنغير قيمة المتغير اللتي فيها النتيجه الي True، تعني صحيحة، او False، يعني خاطئة إذا كان الباسورد غير متطابق**
 
 **مثال📟:**
-`# نقوم بعمل المتغييرين
+```python
+# نقوم بعمل المتغييرين
 password1 = 12345
 password2 = 12344
 
@@ -257,7 +274,8 @@ if password2 == password:
     access = False
 
 print(access)
->> False`
+>> False
+```
 [GitHub](https://github.com/PythonNoob999/PythonTutorialBot/blob/master/examples/data_types_bool_ar.py)📒
 ''',
 "data_types-bool-en": '''
@@ -273,7 +291,8 @@ print(access)
 **We can make 2 int vars that have 2 passwords, and match it with the correct password, and make a result var and change it to True, if the var is identical to the password else we will but a default value to False**
 
 **Example📟:**
-`# we make the 2 passwords vars
+```python
+# we make the 2 passwords vars
 password1 = 12345
 password2 = 12344
 
@@ -297,7 +316,8 @@ if password2 == password:
     access = False
 
 print(access)
->> False`
+>> False
+```
 [GitHub](https://github.com/PythonNoob999/PythonTutorialBot/blob/master/examples/data_types_bool_en.py)📒
 ''',
 "data_types-list-en": '''
@@ -313,7 +333,8 @@ print(access)
 **We can use lists to store fruits, and printing them by the "index"**
 
 **Example📟:**
-`fruits = ["Apple", "Kiwi", "Banana"]
+```python
+fruits = ["Apple", "Kiwi", "Banana"]
 # indexing starts at 0 in most programming languages
 
 print(fruits[0])
@@ -329,7 +350,8 @@ print(fruits[-2]) # the item before the last one
 >> Kiwi
 fruits[0] = "Orange" # we can even change it's values
 print(fruits)
->> ["Orange", "Kiwi", "Banana"]`
+>> ["Orange", "Kiwi", "Banana"]
+```
 [GitHub](https://github.com/PythonNoob999/PythonTutorialBot/blob/master/examples/data_types_list_en.py)📒
 ''',
 "data_types-list-ar": '''
@@ -345,7 +367,8 @@ print(fruits)
 **نستطيع تخزين قائمة من الفواكه و طباعتهم ب استخدام رقم المكان**
 
 **مثال📟:**
-`fruits = ["Apple", "Kiwi", "Banana"]
+```python
+fruits = ["Apple", "Kiwi", "Banana"]
 # رقم المكان يبدا ب 0 في اغلب اللغات البرمجية
 
 print(fruits[0])
@@ -361,7 +384,8 @@ print(fruits[-2]) # المكان ما قبل الاخير
 >> Kiwi
 fruits[0] = "Orange" # نستطيع ايضا تغير قيمة معينة في القائمة
 print(fruits)
->> ["Orange", "Kiwi", "Banana"]`
+>> ["Orange", "Kiwi", "Banana"]
+```
 [GitHub](https://github.com/PythonNoob999/PythonTutorialBot/blob/master/examples/data_types_list_ar.py)📒
 ''',
 "data_types-tuple-en": '''
@@ -377,7 +401,8 @@ print(fruits)
 **We also can use the tuples like the lists, but this time we are dealing with unchangeable data!**
 
 **Example📟:**
-`# Creating a tuple with fruits
+```python
+# Creating a tuple with fruits
 fruits = ("Apple", "Kiwi", "Banana")
 
 # we can also print it's values with indexing
@@ -392,7 +417,8 @@ print(fruits[-1])
 # but unlike lists[], you can't change it's data
 
 fruits[0] = "Orange"
->> TypeError: "str" object does not support item assignment❗️`
+>> TypeError: "str" object does not support item assignment❗️
+```
 [GitHub](https://github.com/PythonNoob999/PythonTutorialBot/blob/master/examples/data_types_tuple_en.py)📒
 ''',
 "data_types-tuple-ar": '''
@@ -408,7 +434,8 @@ fruits[0] = "Orange"
 **نستطيع استخدام المترابطات مثل القوائم، لكن هذه المرة لا يمكننا تغير قيمها**
 
 **مثال📟:**
-`# نصنع مترابطة بها القيم
+```python
+# نصنع مترابطة بها القيم
 fruits = ("Apple", "Kiwi", "Banana")
 
 # نقوم بطباعة عناصرها ايضا ب استخدام رقم المكان
@@ -425,7 +452,8 @@ print(fruits[-1])
 fruits[0] = "Orange"
 # خطأ، نوع البيانات النصية لايدعم تبادل القيم
 
->> TypeError: "str" object does not support item assignment❗️`
+>> TypeError: "str" object does not support item assignment❗️
+```
 [GitHub](https://github.com/PythonNoob999/PythonTutorialBot/blob/master/examples/data_types_tuple_ar.py)📒
 ''',
 "data_types-dict-en": '''
@@ -448,7 +476,8 @@ fruits[0] = "Orange"
 **We can use dictionary's to list a fruits and it's price per kilo**
 
 **Example📟:**
-`# We make a price dictionary
+```python
+# We make a price dictionary
 fruits = {
 "Apple": 3,
 "Kiwi": 9,
@@ -471,7 +500,8 @@ print(fruits)
 "Apple": 3,
 "Kiwi": 9,
 "Banana": 2
-}`
+}
+```
 [GitHub](https://github.com/PythonNoob999/PythonTutorialBot/blob/master/examples/data_types_dict_en.py)📒
 ''',
 "data_types-dict-ar": '''
@@ -498,7 +528,8 @@ print(fruits)
 **نستطيع بتخزين قائمة من اسعار الفواكه بالكيلو داخل dictionary**
 
 **مثال📟:**
-`# اولا نقوم بصناعة قائمة الاسعار
+```python
+# اولا نقوم بصناعة قائمة الاسعار
 fruits = {
 "تفاح": 3, # تفاح = 3$
 "كيوي": 9, # كيوي = 9$ 
@@ -523,7 +554,8 @@ print(fruits)
 "تفاح": 3,
 "كيوي": 9,
 "موز": 2
-}`
+}
+```
 [GitHub](https://github.com/PythonNoob999/PythonTutorialBot/blob/master/examples/data_types_dict_ar.py)📒
 ''',
 "functions-ar": '''
@@ -542,7 +574,8 @@ def function_name(param1, param2):
 **نستطيع عمل دالة لمعرفة الزاوية الناقصة في المثلث عن طريق اعطائها اول زاويتين**
 
 **مثال📟:**
-`# تقوم ب انشاء الدالة و جعلها تستقبل Angle1, Angle2
+```python
+# تقوم ب انشاء الدالة و جعلها تستقبل Angle1, Angle2
 
 def third_angel(Angel1, Angel2):
 #نقوم بمجمع الزاوية الاولي و التانية و وضعها في متغير
@@ -561,7 +594,8 @@ c = third_angel(a, b)
 # نقوم بطباعة الزاوية الثالثة
 
 print(c, " درجة")
->> 50 درجة`
+>> 50 درجة
+```
 [GitHub](https://github.com/PythonNoob999/PythonTutorialBot/blob/master/examples/functions_ar.py)📒
 ''',
 "functions-en": '''
@@ -580,7 +614,8 @@ def function_name(param1, param2):
 **We can make a function that calculate the third angel of a triangle by giving it the first 2 angels as parameters**
 
 **Example📟:**
-`# we make a function that takes the first angle and the second angle
+```python
+# we make a function that takes the first angle and the second angle
 
 def third_angle(Angle1, Angle2):
 # we make a variable that has the sum of the 2 Angles
@@ -601,7 +636,8 @@ c = third_angle(a, b)
 
 # we print the third angle
 print(c, " Degrees")
->> 50 Degrees`
+>> 50 Degrees
+```
 [GitHub](https://github.com/PythonNoob999/PythonTutorialBot/blob/master/examples/functions_en.py)📒
 ''',
 "loops-ar": "اختر نوع الحلقة",
@@ -624,7 +660,8 @@ while condition:
 و سنقوم بعمل شرط بان طالما عدد مرات الطباعة اقل من عدد المرات اللذي نريدها، سيقوم بزيادة عدد الطباعات**
 
 **مثال📟:**
-`# نقوم بتعين الاسم و عدد مرات الطباعة
+```python
+# نقوم بتعين الاسم و عدد مرات الطباعة
 name = "احمد"
 number = 4
 
@@ -646,7 +683,8 @@ print("تم الانتهاء")
 >> اسمك هو احمد
 >> اسمك هو احمد
 >> اسمك هو احمد
->> تم الانتهاء`
+>> تم الانتهاء
+```
 [GitHub](https://github.com/PythonNoob999/PythonTutorialBot/blob/master/examples/loops_while_ar.py)📒
 ''',
 "loops-while-en": '''
@@ -668,7 +706,8 @@ we but a name in a variable, and the number of times we want our name to be prin
 and we will make a variable that we will use to store the number of times we already printed the name to but it in the while condition**
 
 **Example📟:**
-`# we make name and number variables
+```python
+# we make name and number variables
 
 name = "Jack"
 number = 4
@@ -692,7 +731,8 @@ print("Done")
 >> Your name is Jack
 >> Your name is Jack
 >> Your name is Jack
->> Done`
+>> Done
+```
 [GitHub](https://github.com/PythonNoob999/PythonTutorialBot/blob/master/examples/loops_while_en.py)📒
 ''',
 "loops-for-ar": '''
@@ -720,7 +760,8 @@ for item in list:
 يقوم ب المرور علي عناصر قائمة رقمية int، و يقوم بطباعة الرقم في نفسه**
 
 **مثال📟:**
-`# نقوم بعمل قائمة للتجريب عليها
+```python
+# نقوم بعمل قائمة للتجريب عليها
 lst = [2, 6, 9, 12]
 
 # نقوم ب المرور علي عناصر القائمة و نقوم بطباعة كل عنصر في نفسه
@@ -735,7 +776,8 @@ print("انتهي البرنامج")
 >> 36
 >> 81
 >> 144
->> انتهي البرنامج`
+>> انتهي البرنامج
+```
 [GitHub](https://github.com/PythonNoob999/PythonTutorialBot/blob/master/examples/loops_for_ar.py)📒
 ''',
 "loops-for-en": '''
@@ -762,7 +804,8 @@ for item in list:
 **we can make a simple program, that takes a list contains multiple int value's, and simply print the number times itself**
 
 **Example📟:**
-`# we make the list we want to test with
+```python
+# we make the list we want to test with
 
 lst = [2, 6, 9, 12]
 
@@ -780,7 +823,8 @@ print("Finished")
 >> 36
 >> 81
 >> 144
->> Finished`
+>> Finished
+```
 [GitHub](https://github.com/PythonNoob999/PythonTutorialBot/blob/master/examples/loops_for_en.py)📒
 ''',
 "if_else-ar": '''
@@ -790,7 +834,8 @@ print("Finished")
 **نستخدم if-elif-else نقوم بوضع شرط معين ب استخدام ifو اذا كان هذا الشرط صحيح سوف نقوم بتنفيذ مجموعة من العمليات، و نقوم بوضع شرط بديل للشرط الاول اذا كان للاول غير صحيح ب استخدام elif، و اخيرا نقوم ب استخدام else، لتحقيق كود معين اذا كانت جميع الشروط التي فوقها غير صحيحة**
 
 **•طريقة الكتابة⌨️•**
-`# هنا نقوم بعمل شرط if، يتاكد من ان المتغير number قيمته تساوي 3، و سيقوم بطباعة انه يساوي 3
+```python
+# هنا نقوم بعمل شرط if، يتاكد من ان المتغير number قيمته تساوي 3، و سيقوم بطباعة انه يساوي 3
 
 number = 3
 if number == 3:
@@ -834,7 +879,8 @@ elif number == 2:
 elif number == 3:
     print(number)
 else:
-    print("Unkown")`
+    print("Unkown")
+```
 
 **•مثال للاستعمال❓•**
 **نستطيع عمل برنامج بسيط يقوم ب اخد عمر المستخدم
@@ -844,7 +890,8 @@ else:
 ان كان اقل من 18 سيطبع له انه صغير علي الخدمة**
 
 **مثال📟:**
-`# نقوم باخد عمر المستخدم 
+```python
+# نقوم باخد عمر المستخدم 
 age = int(input("قم بكتابة عمرك: "))
 # نقوم بالتاكد انه اكبر من 18 سنة و سيقوم بطباعة ان الدخول مسموح
 if age > 18:
@@ -868,7 +915,8 @@ else:
 >> لا تستطيع استخدام الخدمة
 
 # اخيرا سوف نجرب كتابة 18
->> يجب ان تكون اكبر من 18 سنة!، حاول السنة القادمة`
+>> يجب ان تكون اكبر من 18 سنة!، حاول السنة القادمة
+```
 [GitHub](https://github.com/PythonNoob999/PythonTutorialBot/blob/master/examples/if_else_ar.py)📒
 ''',
 "if_else-en": '''
@@ -938,7 +986,8 @@ else if the user age is exactly equal to 18, it will print to him he can't use o
 else if the user age is smaller than 18, we will print that he can't use our service**
 
 **Example📟:**
-`# we take a user input and turn it to int
+```python
+# we take a user input and turn it to int
 
 age = int(input("Type your age: "))
 
@@ -966,7 +1015,8 @@ else:
 >> You cant use our service yet!, try again next year
 
 # the last time we will write 17
->> You cant use our service!`
+>> You cant use our service!
+```
 [GitHub](https://github.com/PythonNoob999/PythonTutorialBot/blob/master/examples/if_else_en.py)📒
 ''',
 "lambda-ar": '''
@@ -994,7 +1044,8 @@ print(func(3,5))
 **نستطيع عمل دالة مجهولة بسيطة للغاية، تقوم بإرجاع عمر المستخدم بعد 5 سنين**
 
 **مثال📟:**
-`# اولا نقوم باخذ عمر المستخدم
+```python
+# اولا نقوم باخذ عمر المستخدم
 age = int(input("قم بكتابة عمرك: "))
 
 # سنقوم بعمل دالة مجهولة تاخد المعطي number، و تقوم بإرجاع المعطي number بزيادة 5
@@ -1006,7 +1057,8 @@ print("عمرك بعد 5 سنين هو ", func(age))
 # المخرجات:
 >> قم بإدخال عمرك: 
 # سنقوم بادخال 18 للتجربة
->> عمرك بعد 5 سنين هو 23`
+>> عمرك بعد 5 سنين هو 23
+```
 [GitHub](https://github.com/PythonNoob999/PythonTutorialBot/blob/master/examples/lambda_ar.py)📒
 ''',
 "lambda-en": '''
@@ -1033,7 +1085,8 @@ print(func(5,8))
 **we can make a very simple program that takes the user age and tells him how old he will be after 5 years**
 
 **Example📟:**
-`# first we take the user age
+```python
+# first we take the user age
 age = int(input("Type your age: "))
 
 # now we will make a lambda function that takes a number as a param, and return the number + 5
@@ -1045,7 +1098,8 @@ print("You will be ", myfunc(age), " Years old in 5 years")
 # OUTPUT:
 >> Type your age: 
 # we will type 16 as our age
->> You will be 21 Years old in 5 years`
+>> You will be 21 Years old in 5 years
+```
 [GitHub](https://github.com/PythonNoob999/PythonTutorialBot/blob/master/examples/lambda_en.py)📒
 ''',
 "basic_funcs-ar": "قم بإختيار الدالة اللتي تريد تعلمها!",
@@ -1066,7 +1120,8 @@ len(list, str, bytes, tuple, range)
 **نستطيع استخدام الدالة len لحسابة طول العديد من الأشياء**
 
 **مثال📟:**
-`# نقوم بعمل متغيرات فيها انواع بيانات مختلفة للتجربة
+```python
+# نقوم بعمل متغيرات فيها انواع بيانات مختلفة للتجربة
 
 # قائمة
 list = [4, 8, 7, "Ahmed", True]
@@ -1088,7 +1143,8 @@ print("طول النص هو ", len(string), " عنصر")
 >> طول القائمة هو 5 عناصر
 >> طول المترابطة هو 5 عناصر
 >> طول النص هو 12 عنصر
-# سنلاحظ ان الدالة قامت بحسابة طول النص ك 12 عنصر بدلا من 11 لان عدد حروف الجملة هو 11، لكن الدالة تقوم بحسابة المسافات ايضا`
+# سنلاحظ ان الدالة قامت بحسابة طول النص ك 12 عنصر بدلا من 11 لان عدد حروف الجملة هو 11، لكن الدالة تقوم بحسابة المسافات ايضا
+```
 [GitHub](https://github.com/PythonNoob999/PythonTutorialBot/blob/master/examples/basic_funcs_len_ar.py)📒
 ''',
 "basic_funcs-len()-en": '''
@@ -1104,7 +1160,8 @@ print("طول النص هو ", len(string), " عنصر")
 **We can use the len() function to get the number of items in a str/tuple/list**
 
 **Example📟:**
-`# we make variables that contain multiple data types to calculate there length using the len() function
+```python
+# we make variables that contain multiple data types to calculate there length using the len() function
 
 list = [3, 4, 8, "Ahmed", True]
 tuple = (3, 4, 8, "Ahmed", True)
@@ -1124,7 +1181,8 @@ print("the string has ", len(string), " letters")
 >> the tuple has 5 items
 # in the string case the len() function calculate the string, letter by letter
 >> the string has 12 letters
-# now you might think why the string has 12 "letter", when it contains only of 11 letters. well, the len() function also count empty spaces in a string`
+# now you might think why the string has 12 "letter", when it contains only of 11 letters. well, the len() function also count empty spaces in a string
+```
 [GitHub](https://github.com/PythonNoob999/PythonTutorialBot/blob/master/examples/basic_funcs_len_en.py)📒
 ''',
 "basic_funcs-min()-ar": '''
@@ -1145,7 +1203,8 @@ print(min(numbers))
 و اذا كان الرقم اللذي اختاره المستخدم هو اقل رقم، سنطبع له انه قام بكتابة اصغر رقم**
 
 **مثال📟:**
-`# نقوم ب اخذ رقم من المستخدم 
+```python
+# نقوم ب اخذ رقم من المستخدم 
 number = int(input("قم بكتابة رقم "))
 
 # تقوم بعمل قائمة فيها عدة ارقام عشوائية و فيها الرقم الخاص ب المستخدم
@@ -1166,7 +1225,8 @@ else:
 # سوف نقوم بكتابة 10 في اول مرة 
 >> رقمك ليس الاصغر في القائمة
 # الان سوف نجرب بكتابة 5 في تاني مرة
->> لقد قمت ب اختيار اصغر رقم في القائمة`
+>> لقد قمت ب اختيار اصغر رقم في القائمة
+```
 [GitHub](https://github.com/PythonNoob999/PythonTutorialBot/blob/master/examples/basic_funcs_min_ar.py)📒
 ''',
 "basic_funcs-min()-en": '''
@@ -1189,7 +1249,8 @@ then if the number he wrote is the smallest we will print that he won
 other wise we will print that he lost**
 
 **Example📟:**
-`# we take the user input
+```python
+# we take the user input
 number = int(input("Type a number: "))
 
 # we put the number in a list
@@ -1202,7 +1263,8 @@ if min(numbers) == number:
 
 # other wise we will print that he lost
 else:
-    print("You lost! ")`
+    print("You lost! ")
+```
 [GitHub](https://github.com/PythonNoob999/PythonTutorialBot/blob/master/examples/basic_funcs_min_en.py)📒
 ''',
 "basic_funcs-max()-ar": '''
@@ -1223,7 +1285,8 @@ print(max(numbers))
 و اذا كان الرقم اللذي اختاره المستخدم هو اكبر رقم، سنطبع له انه قام بكتابة اكبر رقم**
 
 **مثال📟:**
-`# نقوم ب اخذ رقم من المستخدم 
+```python
+# نقوم ب اخذ رقم من المستخدم 
 number = int(input("قم بكتابة رقم "))
 
 # تقوم بعمل قائمة فيها عدة ارقام عشوائية و فيها الرقم الخاص ب المستخدم
@@ -1244,7 +1307,8 @@ else:
 # سوف نقوم بكتابة 10 في اول مرة 
 >> رقمك ليس الاكبر في القائمة
 # الان سوف نجرب بكتابة 105 في تاني مرة
->> لقد قمت ب اختيار اكبر رقم في القائمة`
+>> لقد قمت ب اختيار اكبر رقم في القائمة
+```
 [GitHub](https://github.com/PythonNoob999/PythonTutorialBot/blob/master/examples/basic_funcs_max_ar.py)📒
 ''',
 "basic_funcs-max()-en": '''
@@ -1267,7 +1331,8 @@ then if the number he wrote is the biggest we will print that he won
 other wise we will print that he lost**
 
 **Example📟:**
-`# we take the user input
+```python
+# we take the user input
 number = int(input("Type a number: "))
 
 # we put the number in a list
@@ -1280,7 +1345,8 @@ if max(numbers) == number:
 
 # other wise we will print that he lost
 else:
-    print("You lost! ")`
+    print("You lost! ")
+```
 [GitHub](https://github.com/PythonNoob999/PythonTutorialBot/blob/master/examples/basic_funcs_max_en.py)📒
 ''',
 "basic_funcs-sum()-ar": '''
@@ -1301,7 +1367,8 @@ print(sum(numbers))
 **نستطيع بعمل برنامج بسيط، يقوم دائما باخذ معطي من مستخدم باستخدام الحلقة while، و اضافته في قائمة، و حين يكتب المستخدم كلمة exit نقوم ب الخروج من الحلقة while، و نقوم بطباعة مجموع الارقام اللذي كتبه المستخدم**
 
 **مثال📟:**
-`# نقوم بعمل متغير فيه قائمة فارغة
+```python
+# نقوم بعمل متغير فيه قائمة فارغة
 numbers = []
 # نقوم بعمل حلقة while 
 while True:
@@ -1325,7 +1392,8 @@ print(sum(numbers))
 # هنا سنقوم بكتابة الاعداد 5, 8, 10، 12
 # بعدها سنقوم بكتابة كلمة exit
 >> [5, 8, 10, 12]
->> 35`
+>> 35
+```
 [GitHub](https://github.com/PythonNoob999/PythonTutorialBot/blob/master/examples/basic_funcs_sum_ar.py)📒
 ''',
 "basic_funcs-sum()-en": '''
@@ -1348,7 +1416,8 @@ print(sum(numbers))
 That always takes a user input using a While loop➿, and we check if the user input is not the word "exit" then we will add it as a number in a list, else if the user input is the word "exit" we will break out of the while loop, and then print the list and the sum() of it**
 
 **Example📟:**
-`# we make a empty list
+```python
+# we make a empty list
 numbers = []
 
 # we make a while loop and take the user input
@@ -1378,7 +1447,8 @@ print(sum(numbers))
 # this time we will type exit to finish
 # now it will print the list of numbers and sum
 >> [5, 8, 12]
->> 25`
+>> 25
+```
 [GitHub](https://github.com/PythonNoob999/PythonTutorialBot/blob/master/examples/basic_funcs_sum_en.py)📒
 ''',
 "basic_funcs-enumerate()-ar": '''
